@@ -1,0 +1,270 @@
+/* -------------------------- MISE EN PAGE GENERALE ------------------------- */
+a:-webkit-any-link {
+    color:white;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Poppins";
+}
+
+.center {
+    text-align: center;
+} 
+
+
+.container {
+    max-width: 1110px;
+    margin: 5% auto;
+}
+
+input, textarea {
+    font-family: "poppins";
+    border:none;
+    background-color: #E8E8E8;
+    color: black;
+    font-size: 16px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+.text-right {
+    text-align: right;
+}
+
+li {
+    color:white;
+    list-style-type: none;
+}
+
+li:hover {
+    color:blueviolet;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+/* ---------------------------------- TITLE --------------------------------- */
+
+h1 {
+    font-size: 50px;
+} 
+
+h2 {
+    font-size: 30px;
+} 
+
+/* --------------------------------- BUTTON --------------------------------- */
+.btn {
+    display: inline-block;
+    padding: 5px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    margin: 0 auto;
+    display: block;
+    padding: 8px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: blueviolet;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+
+/* ---------------------------------- HERO ---------------------------------- */
+
+#hero {
+    display: flex;
+    align-items : center; /* alignement vertical */
+    justify-content : center; /* alignement horizontal */
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#hero h1 {
+    color: white;
+    font-family: "Poppins";
+}
+
+#hero svg {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    height: 40px;
+}
+
+/* ------------------------------- ABOUT ------------------------------- */
+
+#about p{
+    margin-bottom: 5%;
+}
+
+#about div {
+    margin-top: 5%;
+}
+
+#about img {
+    width: 49%;
+}
+
+/* -------------------------------- CITATION -------------------------------- */
+
+#citation-bg {
+    width:100%;
+    height:80vh;
+    background-size: cover;
+    background-image: url("../images/bg-citation-oss.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#citation-bg div {
+    display: flex;
+    justify-content : center; /* alignement horizontal */
+    flex-direction: column;
+    height: 100%;
+    color: white;
+}
+
+/* ------------------------------ MON HISTOIRE ------------------------------ */
+
+#story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+}
+
+/* ------------------------------- FORMULAIRE ------------------------------- */
+
+form > div {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-first-row > div{
+    width: 45.5%;
+}
+
+
+/* ------------------------------- NAVIGATION ------------------------------- */
+
+#logo {
+    width: 80px;
+}
+
+#hero nav {
+    position: absolute;
+    margin: 0 auto;
+    top: 3%;
+    flex-wrap: nowrap;
+    width: 100%;
+} 
+
+#hero nav ul {
+    flex-wrap: nowrap;
+    width: 35%;
+} 
+
+#hero div {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ------------------------------- RESPONSIVE ------------------------------- */
+
+@media screen and (max-width: 780px) 
+{
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #hero nav {
+        width: 80%;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    #hero nav ul {
+        width: 55%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #about > div {
+        flex-wrap: wrap;
+    }
+
+    #about img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #story {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #img-portrait {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-first-row {
+        display: block;
+        width: 100%;
+    }
+    .form-first-row div {
+        width: 100%;
+    }
+
+    .form-first-row div:nth-child(1) {
+        margin-bottom: 20px;
+    }
+}
+}
